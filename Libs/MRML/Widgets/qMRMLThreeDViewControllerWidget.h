@@ -69,6 +69,9 @@ public:
   /// Get 3D view node associated with this ThreeDViewController.
   Q_INVOKABLE vtkMRMLViewNode* mrmlThreeDViewNode() const;
 
+  /// Get 3D view controller center button widget
+  Q_INVOKABLE QToolButton* centerButton();
+  
 public slots:
 
   void setMRMLScene(vtkMRMLScene* newScene) override;

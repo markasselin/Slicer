@@ -352,6 +352,13 @@ vtkMRMLViewNode* qMRMLThreeDViewControllerWidget::mrmlThreeDViewNode()const
   return vtkMRMLViewNode::SafeDownCast(this->mrmlViewNode());
 }
 
+//---------------------------------------------------------------------------
+QToolButton* qMRMLThreeDViewControllerWidget::centerButton()
+{
+  Q_D(qMRMLThreeDViewControllerWidget);
+  return d->CenterToolButton;
+}
+
 // --------------------------------------------------------------------------
 void qMRMLThreeDViewControllerWidget::setViewLink(bool linked)
 {
