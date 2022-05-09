@@ -303,6 +303,13 @@ QLabel* qMRMLViewControllerBar::viewLabel()
 }
 
 // --------------------------------------------------------------------------
+QToolButton* qMRMLViewControllerBar::maximizeViewButton()
+{
+  Q_D(qMRMLViewControllerBar);
+  return d->MaximizeViewButton;
+}
+
+// --------------------------------------------------------------------------
 void qMRMLViewControllerBar::maximizeView()
 {
   Q_D(qMRMLViewControllerBar);

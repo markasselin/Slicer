@@ -92,6 +92,9 @@ public:
   /// Label that displays the view's name.
   Q_INVOKABLE QLabel* viewLabel();
 
+  /// Get the "maximize view" widget in the view controller.
+  Q_INVOKABLE QToolButton* maximizeViewButton();
+
 public slots:
   void maximizeView();
 
